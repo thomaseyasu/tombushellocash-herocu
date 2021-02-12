@@ -152,7 +152,7 @@
                                                                 CURLOPT_URL => 'https://api-et.hellocash.net/invoices',
                                                                 CURLOPT_RETURNTRANSFER => true,
                                                                 CURLOPT_ENCODING => '',
-                                                                CURLOPT_MAXREDIRS => 10,
+                                                                CURLOPT_MAXREDIRS => $price,
                                                                 CURLOPT_TIMEOUT => 0,
                                                                 CURLOPT_FOLLOWLOCATION => true,
                                                                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
