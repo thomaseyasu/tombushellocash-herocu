@@ -73,7 +73,7 @@
                                                         placeholder="Your Email Adrress" required>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <input type="tel" name="phone" class="form-control form-control-user" id="exampleLastName"
+                                                    <input type="text" name="phone" class="form-control form-control-user" id="exampleLastName"
                                                         placeholder="Phone Number" required>
                                                 </div>
                                                 </div>
