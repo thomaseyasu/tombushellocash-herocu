@@ -14,7 +14,7 @@ curl_setopt_array($curl, array(
   CURLOPT_POSTFIELDS =>'{
       "from": "+251920874415",
       "amount": 10,
-      "description": "Payment for goods from Ethio CODSM",
+      "description": "Payment for thom bus transportation ticket",
       "currency": "ETB",
       "expires": "2021-03-03T14:47:23.000Z",
      "notifyto": true,
