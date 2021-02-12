@@ -1,0 +1,14 @@
+.bank {
+    padding: 8px 12px;
+    color: #33333333;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bank:focus,
+.bank:hover {
+    outline: none;
+    border: 1px solid #bbbbbb;
+}
