@@ -20,6 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="mycss.css" rel="stylesheet">
+    <link href="notify.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -27,6 +28,8 @@
 </head>
 
 <body id="page-top" style="background: #919087">
+
+
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -58,30 +61,30 @@
                                         <div class="text-center">
                                             <h1 style="color: #c7bb00">Pay With HelloCash</h1>
                                         </div>
-                                        <form class="user" method="POST" action="goods_server.php" enctype="multipart/form-data">
+                                        <form class="user" method="POST" action="notify.php" enctype="multipart/form-data">
                                         <div class="form-group row">
                                                     <input type="text" name="name" class="form-control form-control-user" id="exampleFirstName"
-                                                        placeholder="Full Name">
+                                                        placeholder="Full Name" required>
                                                 </div>
                                             <div class="form-group row">
                                                 
                                                 <div class="col-sm-6">
                                                     <input type="email" name="email" class="form-control form-control-user" id="exampleLastName"
-                                                        placeholder="Your Email Adrress">
+                                                        placeholder="Your Email Adrress" required>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <input type="tel" name="phone" class="form-control form-control-user" id="exampleLastName"
-                                                        placeholder="Phone Number">
+                                                        placeholder="Phone Number" required>
                                                 </div>
                                                 </div>
                                                 <div class="form-group row">
                                                 <div class="col-sm-6">
                                                     <input type="number" name="Tnum" class="form-control form-control-user" id="exampleLastName"
-                                                        placeholder="Number of Traveler">
+                                                        placeholder="Number of Traveler" required>
                                                 </div>
                                                 
                                                 <div class="col-sm-6" class="form-control form-control-user" id="exampleLastName">
-                                                <select id="bank" name="bank">
+                                                <select id="bank" name="bank" required>
                                                         <option disabled selected>Bank</option>
                                                         <option value="Lucy">Lucy</option>
                                                     </select>
@@ -89,12 +92,12 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Departure Date</label>
-                                                    <input type="date" name="DDate" class="form-control form-control-user" id="exampleInputEmail"
+                                                    <input type="date" name="DDate" class="form-control form-control-user" id="exampleInputEmail" required
                                                         >
                                                 </div>
                                                 <div class="form-group" class="form-control form-control-user" id="exampleLastName">
                                                     
-                                                    <select id="Dtime" name="Dtime" >
+                                                    <select id="Dtime" name="Dtime" required>
                                                         <option disabled selected>Departure Time</option>
                                                         <option value="12:00 PM - 1:00 AM">12:00 PM - 1:00 AM</option>
                                                         <option value="2:30 AM - 3:30 AM">2:30 AM - 3:30 AM</option>
@@ -105,16 +108,16 @@
                                                 </div>
                                                 <div class="form-group row">
                                                     <input type="text" name="from" class="form-control form-control-user" id="exampleFirstName"
-                                                        placeholder="Travel From">
+                                                        placeholder="Travel From" required>
                                                 </div>
                                                 <div class="form-group row">
                                                     <input type="text" name="to" class="form-control form-control-user" id="exampleLastName"
-                                                        placeholder="Travel to To">
+                                                        placeholder="Travel To" required>
                                                 </div>
                                                 
                                                 <div class="form-group row">
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                            <button type="submit" name="uploadgoods" class="btn btn-primary btn-user btn-block">
+                                                            <button type="submit" name="submit" class="btn btn-primary btn-user btn-block" onclick="togglePopup()">
                                                                 Submit
                                                             </button>
                                                     
@@ -129,6 +132,13 @@
                                         
                                     </div>
                                 </div>
+                            </div>
+                            <div class="popup" id="popup-1">
+                             <div class="overlay"></div>
+                             <div class="content">
+                                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                                <h1>Thanks for buying thom bus transportation ticket!</h1>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -178,6 +188,7 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+    <script src="notify.js"></script>
 
 </body>
 
