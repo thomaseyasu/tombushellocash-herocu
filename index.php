@@ -91,12 +91,12 @@
                                                 </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Departure Date</label>
+                                                    <label style="color: black">Departure Date</label>
                                                     <input type="date" name="DDate" class="form-control form-control-user" id="exampleInputEmail" required
                                                         >
                                                 </div>
                                                 <div class="form-group" class="form-control form-control-user" id="exampleLastName">
-                                                    
+                                                    <label style="color: black">Departure Time</label>
                                                     <select id="Dtime" name="Dtime" required>
                                                         <option disabled selected>Departure Time</option>
                                                         <option value="12:00 PM - 1:00 AM">12:00 PM - 1:00 AM</option>

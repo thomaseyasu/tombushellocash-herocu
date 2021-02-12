@@ -158,8 +158,8 @@
                                                                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                                                                 CURLOPT_CUSTOMREQUEST => 'POST',
                                                                 CURLOPT_POSTFIELDS =>'{
-                                                                    "from": $phone,
-                                                                    "amount": 10,
+                                                                    "from": "+251920874415",
+                                                                    "amount": $price,
                                                                     "description": "Payment for thom bus transportation ticket",
                                                                     "currency": "ETB",
                                                                     "expires": "2021-03-03T14:47:23.000Z",
