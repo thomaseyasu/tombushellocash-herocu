@@ -162,7 +162,6 @@
                                                                     "amount": 10,
                                                                     "description": "Payment for goods from Ethio CODSM",
                                                                     "currency": "ETB",
-                                                                    "expires": "2021-03-03T14:47:23.000Z",
                                                                     "notifyto": true,
                                                                     "notifyfrom": true
                                                                 }',
